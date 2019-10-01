@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <title>Hello!</title>
     <meta charset="utf-8">
@@ -7,31 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>  
   <body>
-    <h1>Hi there!</h1>
-    
-    <form id="form">
-      <label>
-        <span>Caracteres:</span>
-        <input type="text" name="caracteres" id="caracteres" value="abcdefgh" />
-      </label>
-      <label>
-        <span>Nº de letras:</span>
-        <input type="number" name="num" id="num" value="3" min="1" />
-      </label>
-      <label>
-        <span>Regex:</span>
-        <input type="text" name="regex" id="regex" />
-      </label>
-      <button type="submit">
-        Faça seu trabalho!
-      </button>
-    </form>
-    
-    <pre>
-    </pre>
+    <div class="container">
+
+      <h1>Hi there!</h1>
+      
+      <form id="form">
+        <div class="input-field">
+          <input type="text" name="caracteres" id="caracteres" value="abcdefgh" />
+          <label for="caracteres" class="active">Caracteres</label>
+        </div>
+        <div class="input-field">
+          <input type="number" name="num" id="num" value="3" min="1" />
+          <label for="num" class="active">Nº de letras:</label>
+        </div>
+        <div class="input-field">
+          <input type="text" name="regex" id="regex" />
+          <label for="regex">Regex:</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit">
+          Faça seu trabalho!
+        </button>
+      </form>
+      
+      <pre>
+      </pre>
+
+    </div>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
@@ -40,6 +45,7 @@
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="./js/materialize.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

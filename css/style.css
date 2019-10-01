@@ -10,12 +10,6 @@ h1 {
   color: #373fff;
 }
 
-label {
-  display: block;
-  margin-bottom: 0.5em;
-}
-
-label > span {
-  display: inline-block;
-  width: 120px;
+pre {
+	font-size: 1.5em;
 }

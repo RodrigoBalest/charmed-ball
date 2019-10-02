@@ -1,3 +1,14 @@
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw.js')
+    .then(function() {
+      console.log("Service Worker registered successfully");
+    })
+    .catch(function() {
+      console.log("Service worker registration failed");
+    });
+}
+
 function geraPalavras() {
   var chars = $('#caracteres').val();
   var num = $('#num').val();
